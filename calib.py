@@ -581,7 +581,7 @@ if __name__ == '__main__':
     """Step2. Obtain camera intrinsic matrices and save them"""
     #camera0 intrinsics
     images_prefix = os.path.join('frames', 'camera0*')
-    cmtx0, dist0 = calibrate_camera_for_intrinsic_parameters(images_prefix) 
+    cmtx0, dist0 = calibrate_camera_for_intrinsic_parameters("frames/camera0*") 
     save_camera_intrinsics(cmtx0, dist0, 'camera0') #this will write cmtx and dist to disk
     #camera1 intrinsics
     images_prefix = os.path.join('frames', 'camera1*')
